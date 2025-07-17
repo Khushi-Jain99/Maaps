@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+:root{
+    --purple:#9966cc;
+    --white:#fff;
+    --grey:#bbb;
+    --border-grey:#e6e6e6;
+    --p-grey:#666;
+    --black-dark:#212121;
+    --black-light:#252525;
+    --purple-dark:#5f2f90;
+    --hover: #FC766AFF;
+    --background-grey:#f3f3f3;
+    --orange:#E94B3CFF;
+    --hunter-green:#435E55FF;
+    --dark-orange:#EDC2D8FF;
+}
+
+html, body { height: 100%;overflow-x: hidden; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.colorHover{
+    color: var(--purple-dark) !important;
+    font-size: 18px;
+    text-decoration: none;
+}

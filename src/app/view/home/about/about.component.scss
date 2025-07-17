@@ -1,0 +1,82 @@
+#about{
+    position: relative;
+    .container-fluid{
+        .row{
+            .about-detail{
+                padding: 30px;
+                hr{
+                    border-radius: 5px;
+                    background-color: var(--purple-dark);
+                }
+                .about-detail-name{
+                    margin-left:5% ;
+                    padding-right: 15%;
+                    hr{
+                        margin-left: 0;
+                        width: 70%;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .about-img{
+                position: relative;
+                padding-top: 30px;
+                padding-bottom: 20px;
+                .event{
+                    hr{
+                        border-radius: 5px;
+                        background-color: var(--purple-dark);
+                        margin-left: 0;
+                    }
+                    .event-data{
+                        
+                        .row{
+                            marquee{
+                                height: 300px;
+                                .row{
+                                    .date{
+                                        justify-content: center;
+                                        height: 100px;
+                                        color: var(--white);
+                                        background: var(--purple-dark);
+                                        span{
+                                            
+                                        }
+                                    }
+                                    .detail{
+                                        padding-top: 10px;
+                                        height: 100px;
+                                        background: var(--grey);
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        padding-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //background: var(--purple-dark);
+                // .card{
+                //     position: absolute;
+                //     right: 45%;
+                //     top: 25%;
+                //     width: 400px;
+                // }
+                // img{
+                //     position: absolute;
+                //     right: 45%;
+                //     top: 25%;
+                    
+                // }
+                // img:hover{
+                //     transform: scale(1.1);
+                //     filter: brightness(0.8);
+                // }
+            }
+        }
+    }
+}

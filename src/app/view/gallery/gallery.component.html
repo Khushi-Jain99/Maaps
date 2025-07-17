@@ -1,0 +1,278 @@
+<div id="gallery">
+    <div class="container">
+        <div id="gallery-title" class="text-center">
+            <h2>OUR GALLERY</h2>
+            <hr class="pb-2">
+        </div>
+        <div class="row" *ngIf="showList">
+            <div class="col-12 col-md-6 col-lg-4 mb-4" *ngFor="let image of filterImage;let i = index">
+                <div class="card" [routerLink]="['/gallery',image.caption]" (click)="hideList()">
+                    <img class="card-img-top" [src]="image.imgUrl" alt="Card image cap">
+                    <div class="overlay">
+                        <p>{{image.caption}}</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <div *ngIf="!showList">
+            <router-outlet></router-outlet>
+        </div>
+       
+<!-- 
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/1.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/1.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/2.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/2.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/3.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/3.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/4.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/4.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/5.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/5.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/6.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/6.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/7.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/7.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/8.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/8.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/9.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/9.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/10.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/10.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/11.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/11.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/12.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/12.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/13.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/13.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/14.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/14.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/15.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/15.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/16.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/16.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/21.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/21.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/18.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/18.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/19.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/19.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/clubs/20.jpeg" data-lightbox="gallery"><img src="/assets/img/clubs/20.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/creative/1.jpg" data-lightbox="gallery"><img src="/assets/img/creative/1.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/creative/2.jpg" data-lightbox="gallery"><img src="/assets/img/creative/2.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/creative/3.jpg" data-lightbox="gallery"><img src="/assets/img/creative/3.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/creative/4.jpg" data-lightbox="gallery"><img src="/assets/img/creative/4.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/creative/5.jpg" data-lightbox="gallery"><img src="/assets/img/creative/5.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/creative/6.jpg" data-lightbox="gallery"><img src="/assets/img/creative/6.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/creative/7.jpg" data-lightbox="gallery"><img src="/assets/img/creative/7.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/creative/8.jpg" data-lightbox="gallery"><img src="/assets/img/creative/8.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/creative/9.jpg" data-lightbox="gallery"><img src="/assets/img/creative/9.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/activity/1.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/activity/1.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/activity/2.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/activity/2.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/activity/3.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/activity/3.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/activity/4.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/activity/4.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/activity/5.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/activity/5.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/activity/6.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/activity/6.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/activity/7.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/activity/7.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/creative/8.jpg" data-lightbox="gallery"><img src="/assets/img/creative/8.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/activity/9.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/activity/9.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/activity/10.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/activity/10.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/activity/12.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/activity/12.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/computer/1.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/computer/1.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/computer/2.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/computer/2.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/computer/3.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/computer/3.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/computer/4.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/computer/4.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/1.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/1.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/2.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/2.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/3.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/3.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/4.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/4.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/5.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/5.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/6.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/6.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/7.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/7.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/8.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/8.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/9.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/9.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/17.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/17.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/11.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/11.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/12.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/12.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/13.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/13.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/14.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/14.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/15.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/15.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/math/16.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/math/16.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/social/1.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/social/1.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/lab/social/4.jpeg" data-lightbox="gallery"><img src="/assets/img/lab/social/4.jpeg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/showcase/1.jpg" data-lightbox="gallery"><img src="/assets/img/showcase/1.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/showcase/2.jpg" data-lightbox="gallery"><img src="/assets/img/showcase/2.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/showcase/3.jpg" data-lightbox="gallery"><img src="/assets/img/showcase/3.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/showcase/4.jpg" data-lightbox="gallery"><img src="/assets/img/showcase/4.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/showcase/5.jpg" data-lightbox="gallery"><img src="/assets/img/showcase/5.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/sports/1.JPG" data-lightbox="gallery"><img src="/assets/img/sports/1.JPG" alt="Media" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/sports/2.JPG" data-lightbox="gallery"><img src="/assets/img/sports/2.JPG" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/sports/3.jpg" data-lightbox="gallery"><img src="/assets/img/sports/3.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/sports/4.jpg" data-lightbox="gallery"><img src="/assets/img/sports/4.jpg" alt="Media" class="img-fluid"></a>
+            </div>
+            <div class="col-lg 3 col-md-3 col-sm-12">
+                <a href="/assets/img/sports/5.JPG" data-lightbox="gallery"><img src="/assets/img/sports/5.JPG" alt="Media" class="img-fluid"></a>
+            </div>
+        </div> -->
+    </div>
+</div>

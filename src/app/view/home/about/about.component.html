@@ -1,0 +1,76 @@
+<div id="about">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-8 about-detail">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="font-weight-bold">ABOUT US</h2>
+                        <hr class=" p-1" style="width: 160px;">
+                    </div>
+                    <div class="col-12 about-detail-name">
+                        <h3 class="font-weight-bold">Welcome To Maharaja Aggarsain Adarsh Public School</h3>
+                        <hr>
+                        <p class="lead text-justify">
+                            Maharaja Aggarsain Adarsh Public School was established as a recognized school in the year 1988.
+                             Our school saw the light of the day because of the hardwork and initiative taken by our dynamic visionaries of the Shri Aggarwal Dharamashala Trust.</p>
+                        
+                        <p class="lead d-none d-lg-block text-justify">Shri Aggarwal Dharamshala Trust(Regd.), Hardhian Singh Road, Karol Bagh   was established in the year 1957 . The vision of the trust laid the foundation of our school to impart quality education to the children of the vicinity of Karol Bagh area in Delhi.</p>
+                        <button class="btn btn-warning " routerLink="/about/intro">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 about-img">
+                <div class="event">
+                    <h2 class="font-weight-bold">IMPORTANT NOTICES</h2>
+                    <hr class=" p-1" style="width: 320px;">
+                    <div class="event-data">
+                        <div class="row">
+                            <marquee behavior="scroll" direction="up" scrollamount="2" >
+                                <div class="row mb-3" *ngFor="let new of news;let i=index">
+                                    <div class="col-3 date text-center d-flex flex-column ">
+                                       <div style="font-size: 25px;">{{new.Date}}</div>
+                                       <div style="margin-top: -15px;"></div>
+                                    </div>
+                                    <div class="col-9 pl-0">
+                                        <div class="detail w-75">
+                                            {{new.title}} <br>
+                                            <a class="colorHover" href="{{new.imgPath}}" target="_blank" download>Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="row mb-3">
+                                    <div class="col-3 date text-center d-flex flex-column ">
+                                       <div style="font-size: 30px;">15</div>
+                                       <div style="margin-top: -15px;">AUG</div>
+                                    </div>
+                                    <div class="col-9 pl-0">
+                                        <div class="detail w-75">
+                                            Independence Day
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-3 date text-center d-flex flex-column ">
+                                       <div style="font-size: 30px;">15</div>
+                                       <div style="margin-top: -15px;">AUG</div>
+                                    </div>
+                                    <div class="col-9 pl-0">
+                                        <div class="detail w-75">
+                                            Independence Day
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <h5 class="card-title">Latest Events</h5>
+                </div> -->
+                <!-- <img src="/assets/img/showcase/3.jpg" alt="" class="img-fluid rounded"> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <app-message-header></app-message-header> -->

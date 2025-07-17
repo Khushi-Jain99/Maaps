@@ -1,0 +1,24 @@
+<div id="academic">
+    <div id="banner">
+        <img src="/assets/img/banner/4.jpeg" alt="Banner" class="img-fluid w-100">
+    </div>
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 " id="academic-type">
+            <div class="container">
+                <div class="card shadow-lg colorBlue">
+                    <h3 class="card-title text-center">Academic</h3>
+                    <hr class=" pb-1 w-50">
+                    <div class="card-body">
+                        <p class="lead" routerLink="/academic/subject"><span><i class="fas fa-angle-double-right"></i></span>Subjects Offered XI & XII</p>
+                        <p class="lead" routerLink="/not-found"><span><i class="fas fa-angle-double-right"></i></span>Syllabus/Curriculum</p>
+                        <p class="lead" routerLink="/academic/books"><span><i class="fas fa-angle-double-right"></i></span>List Of Text Books</p>
+                        <p class="lead" routerLink="/academic/exam"><span><i class="fas fa-angle-double-right"></i></span>Evaluation System</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9" id="academic-detail">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

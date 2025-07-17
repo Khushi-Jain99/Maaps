@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-4 mb-4" *ngFor="let img of image">
+        <div class="card">
+            <a href={{img.imgUrl}} data-lightbox="gallery"><img [src]="img.imgUrl" alt="Media" class="card-img-top"></a>
+            <!-- <img class="" [src]="image.imgUrl" alt="Card image cap"> -->
+            <div class="card-body">
+                <p class="text-center">{{img.caption}}</p>
+            </div>
+        </div>
+    </div>
+</div>

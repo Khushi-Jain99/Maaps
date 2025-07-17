@@ -1,0 +1,125 @@
+<div id="showcase">
+    <div class="carousel slide text-center" id="slide1" data-ride="carousel">
+        <!-- Indicator -->
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#slide1"
+            data-slide-to="0"></li>
+            <li data-target="#slide1" data-slide-to="1" ></li>
+            <li data-target="#slide1" data-slide-to="2"></li>
+            <li data-target="#slide1" data-slide-to="3"></li>
+            <li data-target="#slide1" data-slide-to="4"></li>
+            
+        </ol>
+        <!-- img URL -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container-fluid" id="loader" *ngIf="isLoading[0]">
+                    <app-loader></app-loader>
+                </div>
+                <img src="/assets/img/showcase/5.jpg" alt="School Bhilding" class="img-fluid rounded"
+                style="filter: brightness(80%);"
+                [ngStyle]="{visibility:isLoading[0]?'hidden':'visible'}"
+                (load)="hideLoader(0)" (error)="hideLoader(0)">
+                <!-- <div class="carousel-caption d-none d-lg-block">
+                    <h3 class="animate__animated animate__backInUp ">WELCOME TO The Cambridge International School</h3>
+                    <p class="animate__animated animate__lightSpeedInRight" >Admissions Open for the <br>
+                        <span class="colorRed"> Academic Session 2021-22 </span><br>
+                        from Nursery to Class XII</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <div class="container-fluid" id="loader" *ngIf="isLoading[1]">
+                    <app-loader></app-loader>
+                </div>
+                <img src="/assets/img/showcase/2.jpg" alt="School Logo" class="img-fluid rounded"
+                [ngStyle]="{visibility:isLoading[1]?'hidden':'visible'}"
+                (load)="hideLoader(1)" (error)="hideLoader(1)">
+            </div>
+            <div class="carousel-item">
+                <div class="container-fluid" id="loader" *ngIf="isLoading[2]">
+                    <app-loader></app-loader>
+                </div>
+                <img src="/assets/img/showcase/1.jpg" alt="School Logo" class="img-fluid rounded"
+                [ngStyle]="{visibility:isLoading[2]?'hidden':'visible'}"
+                (load)="hideLoader(2)" (error)="hideLoader(2)">
+            </div>
+            <div class="carousel-item">
+                <div class="container-fluid" id="loader" *ngIf="isLoading[3]">
+                    <app-loader></app-loader>
+                </div>
+                <img src="/assets/img/showcase/4.jpg" alt="School Logo" class="img-fluid rounded"
+                [ngStyle]="{visibility:isLoading[3]?'hidden':'visible'}"
+                (load)="hideLoader(3)" (error)="hideLoader(3)">
+            </div>
+            <!-- <div class="carousel-item">
+                <div class="container-fluid" id="loader" *ngIf="isLoading[4]">
+                    <app-loader></app-loader>
+                </div>
+                <img src="/assets/img/showcase/2.jpg" alt="School Logo" class="img-fluid rounded"
+                [ngStyle]="{visibility:isLoading[4]?'hidden':'visible'}"
+                (load)="hideLoader(4)" (error)="hideLoader(4)">
+            </div> -->
+            
+        </div>
+        <!-- controller -->
+        <a href="#slide1" class="carousel-control-prev"
+        data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slide1" class="carousel-control-next"
+        data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="box-cards d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" routerLink="/newsletter">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <span><i class="bi bi-trophy"></i></span>
+                                </div>
+                                <div class="col-9">
+                                    <h3 class="animate__animated animate__rubberBand">NewsLetter</h3>
+                                    <h5 class="animate__animated animate__heartBeat">MAAPS BUGLE</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" routerLink="/gallery">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <span><i class="bi bi-images"></i></span>
+                                </div>
+                                <div class="col-9">
+                                    <h3 class="animate__animated animate__rubberBand">Gallery</h3>
+                                    <h5 class="animate__animated animate__heartBeat">Photos & Videos</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" routerLink="/cbse">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <span><i class="bi bi-newspaper"></i></span>
+                                </div>
+                                <div class="col-9">
+                                    <h3 class="animate__animated animate__rubberBand">CBSE </h3>
+                                    <h5 class="animate__animated animate__heartBeat">Results</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

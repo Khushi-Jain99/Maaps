@@ -1,0 +1,50 @@
+#teacher{
+    .container{
+        max-width: 100%;
+        width: 100%;
+        h2{
+            color: var(--purple-dark);
+            font-family: 'Font Awesome 5 Free';
+        }
+        .card{
+            border-radius: 20px;
+            margin-bottom: 15px;
+            #list-view{
+                zoom: 1.2;
+            }
+        }
+    }
+}
+@media(max-width:1200px) and (min-width:992px){
+    #teacher{
+        #list-view{
+            zoom: 1 !important;
+        }
+    }
+    
+}
+@media(max-width:991px) and (min-width:769px){
+    #teacher{
+        #list-view{
+            zoom: 0.8 !important;
+        }
+    }
+    
+}
+@media(max-width:768px) and (min-width:476px){
+    #teacher{
+        #list-view{
+            zoom: 0.6 !important;
+        }
+    }
+    
+}
+
+@media(max-width:475px){
+    #teacher{
+        #list-view{
+            zoom: 0.5 !important;
+        }
+    }
+    
+}

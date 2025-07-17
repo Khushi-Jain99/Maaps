@@ -1,0 +1,101 @@
+
+
+
+<div id="book">
+  <div class="container-fluid" *ngIf="!isverified">
+    <div class="card">
+      <div class="card-body">
+        <form #verificationform="ngForm" (ngSubmit)="onSubmit(verificationform)">
+          <div class="form-group">
+            <label for="regno">Registration Number</label>
+            <input type="tel" class="form-control w-50" id="regno" name="regno" aria-describedby="emailHelp" placeholder="Enter Registration Number"
+            ngModel
+            required
+            minlength="4"
+            maxlength="4">
+            <small id="emailHelp" class="form-text text-muted">Enter your Registration Number.</small>
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]="!verificationform.valid">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+    <div class="container-fluid" *ngIf="isverified">
+        <div class="card">
+            <h1 class="card-title text-center">List Of Text Books</h1>
+            <div class="card-body">
+                <table class="table table-hover table-bordered w-75 mx-auto">
+                    <thead>
+                      <tr>
+                        <th scope="col" style="width: 10%;">S No.</th>
+                        <th scope="col">Text Books</th>
+                        <th scope="col" class="text-center" style="width: 20%;">Download</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Pre-School</td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/18vbPCaJmmv5tqeH-KCeImyWeheoEo8NN/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Pre-Primary</td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/1f6gKYKuxiK1qLU4gTnbImaRNt7DJ44JY/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td >Class 1<sup>st</sup></td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/1sQGhIQTnN9TLgTJoVDVpZn6aMlaAWWFq/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Class 2<sup>nd</sup></td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/1wnZ-My3T6NJHB4LaLipoKOBHgJviprts/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Class 3<sup>rd</sup></td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/1kG_Os8O2Ro7dgivOJTi0OwqV7S93l3kY/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Class 4 <sup>th</sup></td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/1AeKCJLPG-CP1l0KIsEChPEpqdLAaMckL/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>Class 5<sup>th</sup></td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/1ffyBzKpbNWmcWJBwjpSLBUZ7UNfEvV70/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>Class 6<sup>th</sup></td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/1k7kwGgMzXWJtnzjubeqieB7BA5GOdEFG/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>Class 7<sup>th</sup></td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/1e8Jl1hq9Cn8W-CURnQfpF9NGU9PGV2H8/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>Class 8<sup>th</sup></td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/1EGFnc3OQNyh1HuuGrOCo36pjZsvcyUzX/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">11</th>
+                        <td>Class 9<sup>th</sup></td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/1cnb594hONOI6tTlzAXCE4sUGsIjwaDSv/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12</th>
+                        <td>Class 10<sup>th</sup></td>
+                        <td class="text-center"><a href="https://drive.google.com/file/d/1X85IwbZPgDsVgaMiYaHvZMypLcRFT6VX/view?usp=sharing" target="-blank" download><i class="bi bi-download"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>

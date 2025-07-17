@@ -1,0 +1,159 @@
+<div id="header">
+    <div class="container-fluid text-center mt-3">
+        <div class="btn-group " role="group" aria-label="Message Button Group">
+            <button type="button" 
+            class="btn mr-1" 
+            id="chairman-message" 
+            data-toggle="collapse" 
+            data-target="#message1" 
+            aria-expanded="true" 
+            aria-controls="Chairman Message"
+            (click)="showCard(1)">Chairman Message</button>
+
+            <button type="button" 
+            class="btn mr-1" 
+            id="Manager-message" 
+            data-toggle="collapse" 
+            data-target="#message2" 
+            aria-expanded="true" 
+            aria-controls="Mangager Message"
+            (click)="showCard(2)">Mangager Message</button>
+
+            <button type="button" 
+            class="btn mr-1" 
+            id="principal-message" 
+            data-toggle="collapse" 
+            data-target="#message3" 
+            aria-expanded="true" 
+            aria-controls="Principal Message"
+            (click)="showCard(3)">Principal Message</button>
+
+            <button type="button" 
+            class="btn mr-1" 
+            id="senior-message" 
+            data-toggle="collapse" 
+            data-target="#message4" 
+            aria-expanded="true" 
+            aria-controls="Senior Incharge Message"
+            (click)="showCard(4)">Senior Incharge Message</button>
+
+            <button type="button" 
+            class="btn mr-1" 
+            id="primary-message" 
+            data-toggle="collapse" 
+            data-target="#message5" 
+            aria-expanded="true" 
+            aria-controls="Primary Incharge Message"
+            (click)="showCard(5)">Primary Incharge Message</button>
+        </div>
+
+        <!-- Message 1 -->
+        <div class="row collapse show multi-collapse" id="message1">
+            <div class="col-12 col-lg-9 py-5 detail-box">
+                <div class="message-detail">
+                    <p class="text-left">It is a matter of pride for me to pen down a message for the school website.
+                        My heart fills with immense pleasure as I observe the progress being made at Maharaja AggarsainAdarsh Public School.
+                         Hardwork, will power and determination are the  traits  that strengthens  MAAPSIANS with unlimited initiative and incentive to create their pathway to success.</p>
+                    
+                      <button class="btn btn-warning btn-sm mx-auto" routerLink="/about/chairman-message">Read More</button>
+                  </div>
+            </div>
+            <div class="col-12 col-lg-3 d-none d-md-block image-box">
+                <div class="badge1 badge">
+                    <div class="text">
+                        Chairman
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-block d-md-none image-box">
+                <img src="/assets/img/message/chairman.jpeg" alt="Chairman" class="img-fluid rounded-circle" loading='eager'>
+            </div>
+        </div>
+
+        <!-- Message 2 -->
+        <div class="row collapse  multi-collapse" id="message2">
+            <div class="col-12 col-lg-9 py-5 detail-box">
+                <div class="message-detail">
+                    <p class="text-left">Our school is committed to offer the very best in every aspect to students to give them sound footing in a competitive world.Today the quality of education is continuously scaling new heights and new bench marks are constantly set.  Education being a very competitive sector, excellence is the only thing that rules supreme here and we are committed to the same. </p>
+                    
+                      <button class="btn btn-warning btn-sm mx-auto" routerLink="/about/manager-message">Read More</button>
+                  </div>
+            </div>
+            <div class="col-12 col-lg-3 d-none d-md-block image-box">
+                <div class="badge badge2">
+                    <div class="text">
+                        Manager
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-block d-md-none image-box">
+                <img src="/assets/img/message/manager.jpeg" alt="Manager" class="img-fluid rounded-circle">
+            </div>
+        </div>
+
+        <!-- Message 3 -->
+        <div class="row collapse multi-collapse" id="message3">
+            <div class="col-12 col-lg-9 py-5 detail-box">
+                <div class="message-detail">
+                    <p class="text-left">Dear members of the The Maharaja Aggarsain Adarsh Public School family, Well Wishers and Visitors, Greetings and welcome to our school website.</p>
+                    <p class="text-left">Maharaja Aggarsain Adarsh Public School is a great place to teach and learn! Our teachers are committed to a high quality learning experience focused on the individual needs of each child.</p>
+                      <button class="btn btn-warning btn-sm mx-auto" routerLink="/about/principal">Read More</button>
+                  </div>
+            </div>
+            <div class="col-12 col-lg-3 d-none d-md-block image-box">
+                <div class="badge badge3">
+                    <div class="text">
+                        Principal
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-block d-md-none image-box">
+                <img src="/assets/img/message/principal.jpeg" alt="Principal" class="img-fluid rounded-circle">
+            </div>
+        </div>
+        <!-- Message 4 -->
+        <div class="row collapse multi-collapse" id="message4">
+            <div class="col-12 col-lg-9 py-5 detail-box">
+                <div class="message-detail">
+                    <p class="text-left"> Lastly, I would like to convey my thanks and best wishes to our parents, who have been there with the school through thick and thin and have stood as pillars of support in all our endeavours.
+                        My best wishes to my dedicated staff and students who have worked tirelessly to help the school in scaling new heights of success.</p>
+                    
+                      <button class="btn btn-warning btn-sm mx-auto" routerLink="/about/senior">Read More</button>
+                  </div>
+            </div>
+            <div class="col-12 col-lg-3 d-none d-md-block image-box">
+                <div class="badge badge4">
+                    <div class="text">
+                        Senior
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-block d-md-none image-box">
+                <img src="/assets/img/message/senior.jpeg" alt="Senior Incharge" class="img-fluid rounded-circle">
+            </div>
+        </div>
+
+        <!-- message 5 -->
+
+        <div class="row collapse multi-collapse" id="message5">
+            <div class="col-12 col-lg-9 py-5 detail-box">
+                <div class="message-detail">
+                    <p class="text-left"> Lastly, I would like to convey my thanks and best wishes to our parents, who have been there with the school through thick and thin and have stood as pillars of support in all our endeavours.
+                        My best wishes to my dedicated staff and students who have worked tirelessly to help the school in scaling new heights of success.</p>
+                    
+                      <button class="btn btn-warning btn-sm mx-auto" routerLink="/about/primary-message">Read More</button>
+                  </div>
+            </div>
+            <div class="col-12 col-lg-3 d-none d-md-block image-box">
+                <div class="badge badge5">
+                    <div class="text">
+                        Primary
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-block d-md-none image-box">
+                <img src="/assets/img/message/primary.jpeg" alt="Primary Incharge" class="img-fluid rounded-circle">
+            </div>
+        </div>
+    </div>
+</div>

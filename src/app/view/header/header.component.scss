@@ -1,0 +1,215 @@
+#middle-header{
+    overflow: hidden;
+    width: 100%;
+    #school-logo{
+        img{
+            width: 43vw;
+            margin-left: 50px;
+             height: 120px;
+            display: inline;
+            //margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    #loc{
+        overflow: hidden;
+        #logo{
+            margin-top: 40px;
+           width: 40px;
+           height: 40px;
+            border-radius: 100%;
+            border: 1px solid var(--purple-dark);
+            .fa{
+                margin-top: 10px;
+                font-size: 16px;
+                color: var(--purple);
+            }
+        }
+        #logo:hover{
+            border: 0px;
+        }
+        #phone{
+            margin-left: 10px;
+            margin-top: 35px;
+            h4{
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.959);
+                font-family: 'Roboto Condensed',sans-serif;
+                font-weight: bold;
+            }
+            p{
+                color: var(--p-grey);
+                font-size: 14px;
+                font-family: 'Roboto Condensed',sans-serif;
+            }
+        }
+        #location{
+            margin-left: 10px;
+            margin-top: 30px;
+            h4{
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.959);
+                margin-bottom: 20px;
+                font-family: 'Roboto Condensed',sans-serif;
+                font-weight: bold;
+            }
+            p{
+                margin-top: -20px;
+                color: var(--p-grey);
+                font-size: 14px;
+                font-family: 'Roboto Condensed',sans-serif;
+            }
+        }
+    }
+}
+
+#menu-bar{
+    width: 100%;
+    background: var(--purple-dark);
+    nav{
+        width: 100%;
+        background: var(--purple-dark);
+        color: var(--black-light);
+        ul{
+            
+            line-height: 26px;
+            //margin-left: 10px;
+            .active{
+                a{
+                    color: var(--hover);
+                }
+                
+            }
+            a{
+                font-family: 'Roboto Condensed',sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+                margin-right: 5px;
+                text-transform: uppercase;
+                color: var(--white);
+            }
+            a:hover{
+               
+                color: var(--hover);
+            }
+            
+            .dropdown:hover>.dropdown-menu{
+                margin-top: -2%;
+                display: block;
+                transition-delay: 1000ms;
+                background: var(--black-dark);
+            }
+            .dropdown-submenu:hover>.dropdown-menu{
+                display: block;
+                background: var(--black-dark) !important;
+            }
+            .dropdown-menu,.submenu
+            {
+                a{
+                    color: var(--grey);
+                    font-family: 'Roboto Condensed',sans-serif;
+                }
+            }
+            
+            .dropdown-menu > li:hover{
+                margin-left: 10px;
+                .nav-link{
+                    color: var(--hover) ;
+                    background-color:var(--purple-dark);
+                }
+            }
+            .dropdown-menu > a:hover{
+                color: var(--hover) ;
+                margin-left: 10px;
+                width: calc( 100% - 10px);
+                background-color:var(--purple-dark) ;
+            }
+        }
+    }
+}
+input.ng-invalid.ng-touched,textarea.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+input,textarea{
+    box-shadow: none;
+}
+
+@media(max-width:420px){
+
+    // Middle Header
+    #middle-header{
+        #school-logo{
+            img{
+                margin-left: 0px !important;
+                width: 330px !important;
+            }
+        }
+    }
+}
+
+@media(min-width:421px) and (max-width:770px){
+    #middle-header{
+        width: 100% !important;
+        #school-logo{
+            img{
+                
+                margin-left: 0px !important;
+                height: 100px !important;
+            }
+        }
+        #loc{
+            margin-left: -27% !important;
+            #phone{
+                h4{
+                    font-size: 12px !important;
+                }
+                p{
+                    font-size: 9px !important;
+                }
+            }
+            #location{
+                h4{
+                    font-size: 12px !important;
+                }
+                p{
+                    font-size: 9px !important;
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width: 575.98px) { 
+    #middle-header{
+        #school-logo{
+            text-align: center;
+        }
+    }
+ }
+@media (min-width: 576px) and (max-width: 991.98px) { 
+    #middle-header{
+        #school-logo{
+            img{
+                width: 40vw;
+            }
+        }
+    }
+}
+@media (max-width:1254px){
+    #menu-bar{
+        nav{
+            .dropdown:hover>.dropdown-menu{
+                margin-top: 0px !important;
+            }
+        }
+    }
+}
+@media (max-width:1254px){
+    #menu-bar{
+        nav{
+            a{
+                font-size: 13px !important;
+            }
+        }
+    }
+}
