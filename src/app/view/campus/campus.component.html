@@ -1,0 +1,32 @@
+<div id="campus">
+    <div id="banner">
+        <img src="/assets/img/banner/2.jpeg" alt="Banner" class="img-fluid w-100">
+    </div>
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 " id="campus-type">
+            <div class="container">
+                <div class="card shadow-lg colorBlue">
+                    <h3 class="card-title text-center">Campus</h3>
+                    <hr class=" pb-1 w-50">
+                    <div class="card-body">
+                        <p class="lead" routerLink="/campus/safety"><span><i class="fas fa-angle-double-right"></i></span>Safety & Security</p>
+                        <div class="dropdown show">
+                            <a class="lead dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span><i class="fas fa-angle-double-right"></i></span>Facility & infrastructure</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" routerLink="/campus/facility/social-science-lab"><i class="fas fa-hand-point-right"></i> Social Science Lab</a>
+                                <a class="dropdown-item" routerLink="/campus/facility/math-lab"><i class="fas fa-hand-point-right"></i> Math Lab</a>
+                                <a class="dropdown-item" routerLink="/campus/facility/computer-lab"><i class="fas fa-hand-point-right"></i> Computer Lab</a>
+                                <a class="dropdown-item" routerLink="/campus/facility/library"><i class="fas fa-hand-point-right"></i> Library</a>
+                                <a class="dropdown-item" routerLink="/campus/facility/activity-room"><i class="fas fa-hand-point-right"></i> Activity Room</a>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9" id="campus-detail">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

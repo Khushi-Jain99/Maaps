@@ -1,0 +1,280 @@
+<app-slider></app-slider>
+<div id="middle-header">
+    <!-- <div class="d-flex flex-row mr-4 mt-2 " style="max-width: 100%;width: 90%;">
+        <div id="cbse-afillation " class="text-dark font-weight-bold text-md-right text-sm-center text-xs-center ml-3" style="max-width: 1100px;min-width: 150px;width: 100%;">CBSE Affliation No: 531811</div>
+    </div> -->
+    <div class="row d-flex">
+        <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-7 text-xs-center">
+            <div id="school-logo">
+                <img src="/assets/img/logo/5.png" alt="School Logo" class="img-fluid border-0">
+            </div>
+            
+            
+        </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-5  d-none d-sm-block">
+            <div class="row d-flex" id="loc">
+                <div class="col-lg-1 col-md-1 col-sm-1" >
+                    <div id="logo" class="text-center"><i class="fa fa-phone"></i></div >
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3" id="phone">
+                    <h4>Call Now</h4>
+                    <p class="mb-1">011-27344340</p>
+                    <p>011-47640689</p>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1" >
+                    <div id="logo" class="text-center"> <i class="fa fa-map-marker" (click)="scrollTo()" ></i></div >
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6" id="location">
+                    <h4>Our Location</h4>
+                    <p>Block DU, Uttari Pitampura</p>
+                    <p>Pitampura, Delhi, 110088</p>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+</div>
+
+<div id="menu-bar" class="sticky-top">
+    <nav class="navbar navbar-expand-xl ">
+        <button class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#menu">
+            <span class="navbar-toggler-icon" style="color: #00B16A;"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu" >
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                    <a routerLink="/" class="nav-link " data-toggle="collapse" data-target="#menu">Home</a>
+                </li>
+                <li class="nav-item dropdown" routerLinkActive="active">
+                    <a href="#" class="nav-link dropdown-toggle" id="#menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About MAAPS</a>
+                    <div class="dropdown-menu text-sm-center text-xl-left" aria-labelledby="menu">
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/about/intro">>> About Us</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/about/vision">>> Vision & Mission</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/about/chairman-message">>> Chairman's Message</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/about/manager-message">>> Manager's Message</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/about/principal">>> Principal's Message</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/about/senior">>> Senior Incharge's Message</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/about/primary-message">>> Primary Incharge's Message</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/about/faculty">>> Faculty</a>
+                        <!-- <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/about/affilation">>> Affilation</a> -->
+                    </div>
+                </li>
+                <li class="nav-item dropdown" routerLinkActive="active">
+                    <a href="" class="nav-link dropdown-toggle" id="#menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Campus</a>
+                    <ul class="dropdown-menu text-sm-center text-xl-left" aria-labelledby="menu">
+                        <li>
+                            <a class=" nav-link dropdown-item " data-toggle="collapse" data-target="#menu" 
+                            routerLink="/campus/safety">>> Safety & security</a>
+                        </li>
+                       <li class="dropdown-submenu dropright"> 
+                           <a class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">>> Facility & infrastructure</a>
+                           <div class="dropdown-menu submenu text-sm-center text-xl-left" aria-labelledby="menu">
+                            <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                            routerLink="/campus/facility/social-science-lab">>> Social Science Lab</a>
+                            <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                            routerLink="/campus/facility/math-lab">>> MAth LAb</a>
+                            <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                            routerLink="/campus/facility/computer-lab">>> Computer Lab</a>
+                            <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                            routerLink="/campus/facility/library">>> Library</a>
+                            <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                            routerLink="/campus/facility/activity-room">>> Creative Arena</a>
+                        </div>
+                        </li>
+                       
+                    </ul>
+                </li>
+                <li class="nav-item dropdown" routerLinkActive="active">
+                    <a href="" class="nav-link dropdown-toggle" id="#menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admission</a>
+                    <div class="dropdown-menu text-sm-center text-xl-left" aria-labelledby="menu">
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/admission/procedure">>> Procedure</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/admission/fees-structure">>> Fees Structure</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/admission/orientation">>> Teaching Pedagogy At MAAPS</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/admission/registration-form">>> Registration (2022-23)</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                         (click)="login(5)">>> Download Form</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" routerLinkActive="active">
+                    <a href="" class="nav-link dropdown-toggle" id="#menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Academics</a>
+                    <div class="dropdown-menu text-sm-center text-xl-left" aria-labelledby="menu">
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/academic/subject">>> Subjects Offered XI & XII</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/academic/syllabus">>> Syllabus/Curriculum</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/academic/books">>> List Of Text Books</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/academic/exam">>> Evaluation System</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" routerLinkActive="active">
+                    <a href="" class="nav-link dropdown-toggle" id="#menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Beyond Academics</a>
+                    <div class="dropdown-menu text-sm-center text-xl-left" aria-labelledby="menu">
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/beyond/house">>> House System</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/beyond/clubs">>> School Clubs</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/beyond/sports">>> Sports & Games</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/not-found">>> Tours</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/beyond/student-council">>> Student Council</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/beyond/inter-school">>> Inter School & Intra School Activities</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/beyond/alumni">>> Alumni Meet</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        (click)="login(6)">>> Alumni Registration Form</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" routerLinkActive="active">
+                    <a href="" class="nav-link dropdown-toggle" id="#menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Essential Information</a>
+                    <div class="dropdown-menu text-sm-center text-xl-left" aria-labelledby="menu">
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/not-found">>> School Calendar</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/information/timing">>> School/Office Timings</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/not-found">>> Bus Routes</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" 
+                        routerLink="/not-found">>> Uniform</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/information/holidays">>> List Of Holidays</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" 
+                        routerLink="/information/slc">>> SLC Details</a>
+                    </div>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav" 
+                    > <span data-toggle="modal" data-target="#contactModal">Contact Us</span> </a>
+                </li>
+                <li class="nav-item dropdown e ml-4" >
+                    <a href="" class="nav-link dropdown-toggle border border-white" id="#menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maaps Connect</a>
+                    <div class="dropdown-menu text-sm-center text-xl-left" aria-labelledby="menu">
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" (click)="login(1)">>> Parent Portal</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" (click)="login(2)">>> Staff Portal</a>
+                        <a class="dropdown-item " data-toggle="collapse" data-target="#menu" >>> Mobile App</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menu" (click)="login(4)">>> online Fee Payment</a>
+                    </div>
+                </li>
+  
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModal__Label">Contact Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+            <div class="modal-body">
+                <label for="name" class="font-weight-bold h4"> Name</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="bi bi-person-badge"></i>
+                        </span>
+                        </div>
+                    
+                    <input 
+                    type="text" 
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    ngModel
+                    required>
+                </div>
+                <label for="email" class="font-weight-bold h4">Email</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="bi bi-envelope"></i>
+                        </span>
+                        </div>
+                    
+                    <input 
+                    type="email" 
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="email"
+                    ngModel
+                    email
+                    required>
+                </div>
+                <label for="phone" class="font-weight-bold h4">Phone Number</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="bi bi-phone"></i>
+                        </span>
+                        </div>
+                    
+                    <input 
+                    type="tel" 
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="phone number"
+                    ngModel
+                    minlength="10"
+                    maxlength="10"
+                    required
+                    pattern="[6-9]{1}[0-9]{9}">
+                </div>
+                <label for="message" class="font-weight-bold h4">Message</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="bi bi-chat-left-dots"></i>
+                        </span>
+                        </div>
+                    
+                    <textarea 
+                    class="form-control"
+                    id="message"
+                    placeholder="Message"
+                    name="message"
+                    rows="5"
+                    ngModel
+                    required></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button class="btn btn-primary hide-modal" type="submit"
+                     [disabled]="!contactForm.valid" >Submit</button>
+            </div>
+        </form>
+       
+      </div>
+    </div>
+  </div>

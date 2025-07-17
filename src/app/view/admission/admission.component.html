@@ -1,0 +1,24 @@
+<div id="admission">
+    <div id="banner">
+        <img src="/assets/img/banner/3.jpeg" alt="Banner" class="img-fluid w-100">
+    </div>
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 " id="admission-type">
+            <div class="container">
+                <div class="card shadow-lg colorBlue">
+                    <h3 class="card-title text-center">Admission</h3>
+                    <hr class=" pb-1 w-50">
+                    <div class="card-body">
+                        <p class="lead" routerLink="/admission/procedure"><span><i class="fas fa-angle-double-right"></i></span>Procedure</p>
+                        <p class="lead" routerLink="/admission/fees-structure"><span><i class="fas fa-angle-double-right"></i></span>Fees Structure</p>
+                        <p class="lead" routerLink="/admission/orientation"><span><i class="fas fa-angle-double-right"></i></span>Teaching Pedagogy At MAAPS</p>
+                        <p class="lead" routerLink="/admission/registration-form"><span><i class="fas fa-angle-double-right"></i></span>Registration (2022-23)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9" id="admission-detail">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

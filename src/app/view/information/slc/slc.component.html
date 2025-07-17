@@ -1,0 +1,53 @@
+<div id="slc">
+    <div class="container" style="max-width: 100%;width: 100%;">
+        <div class="card shadow-lg colorBlue">
+            <h1 class="card-title ">SLC
+            </h1>
+            <div class="card-body">
+                <!-- <p class="lead fontWeight400 text-justify" style="color:var(--orange);font-size: 20px;">School timings 8 a.m to 2 p.m</p>
+                <p class="lead fontWeight400 text-justify" style="color:var(--orange);font-size: 20px;">School office timings 9 a.m to 12.30 p.m</p> -->
+                <div class="alert alert-warning alert-danger fade show" role="alert" *ngIf="alert">
+                    Sorry. We didn't Find SLC For this Admission Number. Please Contact In School.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                <form class="form-inline" #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" class="form-control" id="search"
+                        name="search"
+                        ngModel
+                        required
+                         placeholder="Search with Admission Number">
+                      </div>
+                      <button type="submit" class="btn btn-primary mb-2" [disabled]="searchForm.invalid">Search</button>
+                </form>
+                <!-- <div class="search">
+                    <input type="text" [(ngModel)]="term" class="form-control" placeholder="Search with Admission Number">
+                  </div> -->
+                  <!-- <div *ngIf="term">
+                    <div *ngFor="let item of pdfList | filter:term" >
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start align-items-center">
+                                <p>{{item.caption}}</p>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end align-items-center">
+                                 <a [href]=item.pdfUrl target="_blank" download class="btn btn-warning">Download</a>
+                            </div>
+                        </div>
+                       </div>
+                  </div> -->
+                  <div class="row detail mt-5">
+                    <div class="col-6 d-flex justify-content-start align-items-center">
+                        <p class="caption">{{caption}}</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                         <a [href]=pdfUrl target="_blank" download class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+#sports{
+    font-family: 'Font Awesome 5 Free';
+    .card{
+        
+        border-radius: 20px;
+        .card-title{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-left: 30px;
+            margin-top: 10px;
+            color: var(--purple-dark);
+        }
+        .card-body{
+            margin-left: 20px;
+            margin-right: 20px;
+            p{
+                font-size: 18px;
+                
+            }
+            h5{
+                margin-top: 20px;
+                font-weight: bold;
+
+            }
+            hr{
+                padding-top: 2px;
+                margin-top: -10px;
+                margin-left: -10px;
+                width: 180px;
+                margin-bottom: 30px;
+                border-radius: 5px;
+                background-color:  var(--purple-dark) !important;
+            }
+            img{
+                border: 5px solid var(--black-dark);
+            }
+            .fontWeight400{
+                font-weight: 400;
+            }
+        }
+    }
+}

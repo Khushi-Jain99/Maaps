@@ -1,0 +1,17 @@
+#subject{
+    .container-fluid{
+        .card{
+            margin: 2%;
+            border-radius: 20px;
+        .card-title{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-left: 30px;
+            margin-top: 10px;
+            color: var(--purple-dark);
+        }
+        .card-body{}
+        
+        }
+    }
+}

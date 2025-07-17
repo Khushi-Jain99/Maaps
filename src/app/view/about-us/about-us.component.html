@@ -1,0 +1,29 @@
+<div id="about">
+    <div id="banner">
+        <img src="/assets/img/banner/1.jpeg" alt="Banner" class="img-fluid w-100">
+    </div>
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 " id="about-type">
+            <div class="container">
+                <div class="card shadow-lg colorBlue">
+                    <h3 class="card-title text-center">About Us</h3>
+                    <hr class=" pb-1 w-50">
+                    <div class="card-body">
+                        <p class="lead" routerLink="/about/intro"><span><i class="fas fa-angle-double-right"></i></span>About Us</p>
+                        <p class="lead" routerLink="/about/vision"><span><i class="fas fa-angle-double-right"></i></span>Vision & Mission</p>
+                        <p class="lead" routerLink="/about/chairman-message"><span><i class="fas fa-angle-double-right"></i></span>Chairman's Message</p>
+                        <p class="lead" routerLink="/about/manager-message"><span><i class="fas fa-angle-double-right"></i></span>Manager's Message</p>
+                        <p class="lead" routerLink="/about/principal"><span><i class="fas fa-angle-double-right"></i></span>Principal's Message</p>
+                        <p class="lead" routerLink="/about/senior"><span><i class="fas fa-angle-double-right"></i></span>Senior Incharge Message</p>
+                        <p class="lead" routerLink="/about/primary-message"><span><i class="fas fa-angle-double-right"></i></span>Primary Incharge Message</p>
+                        <p class="lead" routerLink="/about/faculty"><span><i class="fas fa-angle-double-right"></i></span>Faculty</p>
+                        <!-- <p class="lead" routerLink="/about/annual-report"><span><i class="fas fa-angle-double-right"></i></span>Affilation</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9" id="about-detail">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

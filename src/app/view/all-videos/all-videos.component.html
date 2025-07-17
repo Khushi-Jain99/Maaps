@@ -1,0 +1,110 @@
+<div id="all">
+    <div class="row heading">
+        <div class="col-12 text-center">
+            <h1>AUDIO & VIDEO CLIPS</h1>
+            <hr class="pb-2 rounded">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div id="allSlider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#allSlider" data-slide-to="0" class="active"></li>
+                  <!-- <li data-target="#allSlider" data-slide-to="1"></li>
+                  <li data-target="#allSlider" data-slide-to="2"></li> -->
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                   <div class="row">
+                    <div class="col-sm-12 col-md-6" *ngFor="let video of videos">
+                        <div class="all-detail">
+                            <div class="row">
+                                <div class="col-8 text-justify detail">
+                                    <h5>{{video.title}}</h5>
+                                     <p>{{video.description}}</p>
+                                </div>
+                                <div class="col-4 my-auto">
+                                    <a href="{{video.link}}" target="_blank"> <img [src]="video.imgUrl" [alt]="video.title" class="img-fluid rounded" ></a>
+                                   
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-12 col-md-6">
+                        <div class="all-detail">
+                            <div class="row">
+                                <div class="col-8 text-justify detail">
+                                    <h5>GAUTAM BUDDHA JAYANTI</h5>
+                                     <p>GAUTAM BUDDHA JAYANTI</p>
+                                </div>
+                                <div class="col-4 my-auto">
+                                    <img src="/assets/img/activities/5.png" alt="" class="img-fluid rounded"  >
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="all-detail">
+                            <div class="row">
+                                <div class="col-8 text-justify detail">
+                                    <h5>Diwali 2020</h5>
+                                     <p>Diwali 2020</p>
+                                </div>
+                                <div class="col-4 my-auto">
+                                    <img src="/assets/img/activities/4.png" alt="" class="img-fluid rounded"  >
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="all-detail">
+                            <div class="row">
+                                <div class="col-8 text-justify detail">
+                                    <h5>Performing Arts Program</h5>
+                                     <p>Glimpses of our  MAAPCIANS</p>
+                                </div>
+                                <div class="col-4 my-auto">
+                                    <img src="/assets/img/activities/2.png" alt="" class="img-fluid rounded"  >
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                     <div class="all-detail">
+                         <div class="row">
+                             <div class="col-8 text-justify detail">
+                                 <h5>Gaming with words</h5>
+                                  <p>Its a board game designed by a language teacher to enable the students learn grammar concepts while playing and having fun.
+                                      It enables the students to enhance their vocabulary skills with collaborative learning approach.
+                                      The game emphasises on the concept of peer learning. 
+                                      It is developed to cater the needs of children with different learning abilities.</p>
+                             </div>
+                             <div class="col-4 my-auto">
+                                 <img src="/assets/img/activities/1.png" alt="" class="img-fluid rounded"  >
+                              </div>
+                         </div>
+                     </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="all-detail">
+                            <div class="row">
+                                <div class="col-8 text-justify detail">
+                                    <h5>World Red Cross Day 2021</h5>
+                                     <p>World Red Cross Day 2021</p>
+                                </div>
+                                <div class="col-4 my-auto">
+                                    <img src="/assets/img/activities/3.png" alt="" class="img-fluid rounded"  >
+                                 </div>
+                            </div>
+                        </div>
+                    </div> -->
+                   </div>
+                  </div>
+                  
+                </div>
+               
+              </div>
+        </div>
+    </div>
+   
+</div>

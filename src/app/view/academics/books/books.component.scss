@@ -1,0 +1,33 @@
+#book{
+    .container-fluid{
+        .form-control{
+            box-shadow: none;
+        }
+        input, input::-webkit-input-placeholder {
+            font-size: 13px;
+            line-height: 3;
+        }
+        input.ng-invalid.ng-touched{
+            border: 1px solid red;
+        }
+        input.ng-valid{
+            border: 1px solid green;
+        }
+        .card{
+            margin: 2%;
+            border-radius: 20px;
+        .card-title{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-left: 30px;
+            margin-top: 10px;
+            color: var(--purple-dark);
+        }
+        .card-body{
+            i{
+                font-size: 20px;
+            }
+        }
+        }
+    }
+}

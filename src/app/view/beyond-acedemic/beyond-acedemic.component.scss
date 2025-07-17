@@ -1,0 +1,74 @@
+#beyond{
+    overflow: hidden;
+    margin-bottom: 150px;
+    #banner{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        flex: 1 1 100%;
+        height: 300px;
+        
+    }
+    hr{
+        border-radius: 10px;
+        margin-top: -10px;
+        margin-left: 40px;
+        background-color: var(--purple-dark) !important;
+    }
+    #beyond-type{
+        margin-top: 20px;
+        .card{
+            
+            border-radius: 20px;
+            .card-title{
+                margin-top: 10px;
+                font-family: cursive;
+                font-weight: bold;
+            }
+            .card-body{
+                margin-left: 30px;
+                font-family: 'Font Awesome 5 Free';
+                p{
+                    font-weight: 400;
+                }
+                p:hover{
+                    margin-left: 11px;
+                    color:var(--hover);
+                }
+                p::after{
+                    border: none !important;
+                }
+            }
+        }
+    }
+    #beyond-detail{
+        margin-top: 20px;
+    }
+}
+@media(min-width:1601px){
+    #beyond
+{
+        #banner{
+            height: auto !important;
+        }
+    }
+}
+@media(min-width:770px) and (max-width:991px){
+    #beyond
+{
+        hr{
+            margin-left: 47px !important;
+        }
+        #beyond-type{
+            .card-body{
+                margin-left: 10px !important;
+                p{
+                    font-size: 16px !important;
+                }
+                p:hover{
+                    margin-left: 0px !important;
+                }
+            }
+        }
+    }
+}

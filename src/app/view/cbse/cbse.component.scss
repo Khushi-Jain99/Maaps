@@ -1,0 +1,53 @@
+#cbse{
+    .container-fluid{
+        .card{
+            margin: 2%;
+            border-radius: 20px;
+        .card-title{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-left: 30px;
+            margin-top: 10px;
+            color: var(--purple-dark);
+        }
+        .card-body{
+            #list-view{
+                zoom: 1.3;
+            }
+        }
+        }
+    }
+}
+@media(max-width:1200px) and (min-width:992px){
+    #cbse{
+        #list-view{
+            zoom: 1 !important;
+        }
+    }
+    
+}
+@media(max-width:991px) and (min-width:769px){
+    #cbse{
+        #list-view{
+            zoom: 0.8 !important;
+        }
+    }
+    
+}
+@media(max-width:768px) and (min-width:476px){
+    #cbse{
+        #list-view{
+            zoom: 0.6 !important;
+        }
+    }
+    
+}
+
+@media(max-width:475px){
+    #cbse{
+        #list-view{
+            zoom: 0.5 !important;
+        }
+    }
+    
+}

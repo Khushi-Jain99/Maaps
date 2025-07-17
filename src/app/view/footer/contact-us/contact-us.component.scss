@@ -1,0 +1,19 @@
+#contact{
+    padding-left: 40%;
+    color: var(--white);
+    .follow-detail{
+        i{
+            font-size: 30px;
+            color: var(--white);
+        }
+        i:hover{
+            color: var(--hover);
+        }
+    }
+}
+@media(max-width:540px){
+    #contact{
+        padding-left: 10%;
+        
+    }
+}
